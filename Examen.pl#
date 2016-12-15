@@ -1,0 +1,38 @@
+Hombre(Jose_Arcadio_Buendia)
+Hombre(Jose_Arcadio)
+Hombre(Arcadio)
+Hombre(Aureliano)
+Hombre(Aureliano_Jr)
+Hombre(Cononel_Auriano_Buendia)
+Hombre(Jose_Aureliano)
+Hombre(Aureliano_Segundo)
+Hombre(Jose_Arcadio_segundo)
+
+Mujer(Ursula_Iguaran)
+Mujer(Rebeca)
+Mujer(Amaranta)
+Mujer(Remedios_Mosquete)
+Mujer(Pilar_Temera)
+Mujer(SantaSofia_de_la_Piedad)
+Mujer(Remedios_the_Beuty)
+Mujer(Petra_cortes)
+Mujer(Fernanda_de_carpio)
+Mujer(Renata_Remedios)
+Mujer(Amarantha_Ursula)
+
+progenitor(Jose_Arcadio_Buendia,Ursula_Iguaran)
+Progenitor(Jose_Arcadio,Pilar_Temera)
+progenitor(Coronel_Aureliano_Buendia,Pilar_Tamera)
+progenitor(Arcadio,SantaSofia_de_la_Piedad)
+progenitor(Aureliano_Segundo,Fernanda_de_carpio)
+progenitor(Renata_Remedios)
+progenitor(Aureliano,Amarantha_Ursula)
+
+Padre(X,Y):- progenitor(X,Y), Hombre(X).
+Madre(X,Y):- progenitor(X,Y), Mujer(X).
+
+Hijo(X,Y):- progenitor(Y,X), Hombre(X).
+abuelo(X,Y):- progenitor(Z,Y),Prog
+
+
+
